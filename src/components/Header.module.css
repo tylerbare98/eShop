@@ -1,0 +1,81 @@
+/****************** Header container ******************/
+
+.header{
+    position:sticky;
+    top: 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131921;
+    height: 60px;
+}
+
+/******************** Header logo ********************/
+
+.header_logo{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.header_logoImage{
+    color:orange;
+    margin-right: 10px;
+}
+
+.header_logoTitle{
+    color:white;
+}
+
+/******************* Header search *******************/
+
+.header_search{
+    display:flex;
+    flex:1;
+    margin: 0 10px;
+}
+
+.header_searchInput{
+    width: 100%;
+    border: none;
+    padding: 10px;
+}
+
+.header_searchIcon{
+    padding:5px;
+    background-color:orange;
+}
+/******************** Header nav *********************/
+
+.header_nav{
+    display:flex;
+}
+
+.nav_item{
+    display:flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.nav_itemLineOne{
+    font-size: 10px;
+}
+
+.nav_itemLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.basket_item{
+    display:flex;
+    align-items: center;
+}
+
+.basket_itemBasket{
+    margin-left: 50px;
+    margin-right:10px;
+}
+
+.basket_basketCount{
+    margin: 0 25px 0 5px;
+}
