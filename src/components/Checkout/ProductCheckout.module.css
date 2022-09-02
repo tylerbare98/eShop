@@ -1,0 +1,31 @@
+.container{
+    background-color:rgb(219, 215, 215) !important;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius:10px;
+    overflow:auto;
+}
+
+.image{
+    float:left;
+    max-height:150px;
+    max-width:200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.description{
+    overflow:hidden;
+    padding-left: 15px;
+}
+
+.description > button{
+    background-color:orange;
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+}
+
+.description > p{
+    margin:0 0 5px 0;
+}

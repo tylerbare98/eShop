@@ -1,0 +1,18 @@
+.checkoutButton{
+    background-color:orange;
+    padding:5px;
+    border:none;
+    border-radius: 5px;
+    width:100%;
+}
+
+.container{
+    padding:10px;
+    line-height: 30px;
+    border: solid orange 1px;
+    background-color: rgb(219, 215, 215) !important;
+}
+
+section > span{
+    margin-left: 4px;
+}

@@ -75,8 +75,10 @@
 .basket_itemBasket{
     margin-left: 50px;
     margin-right:10px;
+    color:orange;
 }
 
 .basket_basketCount{
     margin: 0 25px 0 5px;
+    color:white;
 }

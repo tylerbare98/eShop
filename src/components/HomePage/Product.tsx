@@ -1,9 +1,6 @@
-import { PropaneSharp } from '@mui/icons-material';
 import styles from './Product.module.css'
+import {productProps} from '../../models/models'
 
-type productProps = {
-  title: string, price: number, rating: number, imgSRC: string 
-}
 
 const Product: React.FC<productProps> = (props) => {
   return (

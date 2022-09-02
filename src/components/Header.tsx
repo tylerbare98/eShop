@@ -2,15 +2,18 @@ import styles from './Header.module.css'
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from "react-router-dom";
 
 const Header = () => {
 
     return(
         <div className={styles.header}>
-            <div className={styles.header_logo}>
-                <StorefrontIcon className={styles.header_logoImage} font-size="large"/>
-                <h2 className={styles.header_logoTitle}>eSHOP</h2>
-            </div>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+                <div className={styles.header_logo}>
+                    <StorefrontIcon className={styles.header_logoImage} font-size="large"/>
+                    <h2 className={styles.header_logoTitle}>eSHOP</h2>
+                </div>
+            </Link>
 
             <div className={styles.header_search}>
                 <input type="text" className={styles.header_searchInput} />
@@ -26,11 +29,12 @@ const Header = () => {
                     <span className={styles.nav_itemLineOne}>Your</span>
                     <span className={styles.nav_itemLineTwo}>Shop</span>
                 </div>
-                <div className={styles.basket_item}>
-                    <ShoppingBasketIcon className={styles.basket_itemBasket}/>
-                    <span className={styles.basket_basketCount}>0</span>
-                </div>
-                
+                <Link to="/checkout" style={{ textDecoration: 'none' }}>
+                    <div className={styles.basket_item}>
+                        <ShoppingBasketIcon className={styles.basket_itemBasket}/>
+                        <span className={styles.basket_basketCount}>0</span>
+                    </div>
+                </Link>
             </div>
         </div>
     )
