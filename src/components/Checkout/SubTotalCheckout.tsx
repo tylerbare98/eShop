@@ -6,6 +6,10 @@ const SubTotalCheckout = () => {
 
     }
 
+    const checkoutHandler = () => {
+        alert("Ordering items...")
+    }
+
     return(
         <div className={styles.container}>
             <span>Subtotal (0 items): <strong>$0</strong></span>
@@ -14,7 +18,7 @@ const SubTotalCheckout = () => {
                         onClick={giftHandler}/>
                     <span>This order contains a gift</span>
             </section>
-            <button className={styles.checkoutButton}> Proceed to checkout</button>
+            <button className={styles.checkoutButton} onClick={checkoutHandler}> Proceed to checkout</button>
         </div>
     )
 }
