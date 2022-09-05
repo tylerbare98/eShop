@@ -1,18 +1,27 @@
+import { useSelector } from 'react-redux'
+import { checkoutState } from '../../models/models'
 import styles from './SubTotalCheckout.module.css'
 
 const SubTotalCheckout = () => {
 
-    const giftHandler = () => {
+    //state setup
+    const storeState: checkoutState = useSelector((state: checkoutState) => state)
 
+    const giftHandler = () => {
+        //nothing: mwah-haha
     }
 
     const checkoutHandler = () => {
         alert("Ordering items...")
     }
 
+    const total = storeState.list.reduce(
+        (prev, curr) => prev + curr.price, 0
+    ).toFixed(2)
+
     return(
         <div className={styles.container}>
-            <span>Subtotal (0 items): <strong>$0</strong></span>
+            <span>Subtotal ({storeState.list.length} items): <strong>${total}</strong></span>
             <section>
                     <input type="checkbox"
                         onClick={giftHandler}/>

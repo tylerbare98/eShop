@@ -3,8 +3,13 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { checkoutState } from '../models/models'
 
 const Header = () => {
+
+    //state setup
+    const storeState: checkoutState = useSelector((state: checkoutState) => state)
 
     return(
         <div className={styles.header}>
@@ -32,7 +37,7 @@ const Header = () => {
                 <Link to="/checkout" style={{ textDecoration: 'none' }}>
                     <div className={styles.basket_item}>
                         <ShoppingBasketIcon className={styles.basket_itemBasket}/>
-                        <span className={styles.basket_basketCount}>0</span>
+                        <span className={styles.basket_basketCount}>{storeState.list.length}</span>
                     </div>
                 </Link>
             </div>

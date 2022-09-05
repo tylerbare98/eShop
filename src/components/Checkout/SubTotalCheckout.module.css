@@ -6,6 +6,12 @@
     width:100%;
 }
 
+.checkoutButton:hover{
+    background-color:white;
+    color:orange;
+    cursor: pointer;
+}
+
 .container{
     padding:10px;
     line-height: 30px;
