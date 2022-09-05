@@ -32,3 +32,9 @@
     border:none;
     border-radius: 5px;
 }
+
+.basketButton:hover{
+    background-color:white;
+    color:orange;
+    cursor: pointer;
+}
