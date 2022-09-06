@@ -4,7 +4,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import SearchIcon from '@mui/icons-material/Search';
 import { Link } from "react-router-dom";
 import { useSelector } from 'react-redux';
-import { checkoutState } from '../models/models'
+import { checkoutState } from '../../models/models'
 
 const Header = () => {
 
@@ -26,10 +26,12 @@ const Header = () => {
             </div>
 
             <div className={styles.header_nav}>
-                <div className={styles.nav_item}>
-                    <span className={styles.nav_itemLineOne}>Hello Guest</span>
-                    <span className={styles.nav_itemLineTwo}>Sign In</span>
-                </div>
+                <Link to="/login" style={{ textDecoration: 'none' }}>
+                    <div className={styles.nav_item}>
+                        <span className={styles.nav_itemLineOne}>Hello Guest</span>
+                        <span className={styles.nav_itemLineTwo}>Sign In</span>
+                    </div>
+                </Link>
                 <div className={styles.nav_item}>
                     <span className={styles.nav_itemLineOne}>Your</span>
                     <span className={styles.nav_itemLineTwo}>Shop</span>

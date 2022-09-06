@@ -1,0 +1,54 @@
+/******************** Logo  *************************/
+.header_logo{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+    justify-content: center;
+}
+
+.header_logoImage{
+    color:orange;
+    margin-right: 10px;
+}
+
+.header_logoTitle{
+    color:black;
+}
+
+/******************** Login  *************************/
+.loginContainer{
+    width:25%;
+    border: 1px solid grey;
+    margin:auto;
+    padding:0 15px 15px 15px;
+    background-color: white;
+}
+
+form > input[type=text]{
+    width:100%;
+    box-sizing: border-box; /* So the input field isn't over 100% */
+}
+
+form > input[type=password]{
+    width:100%;
+    box-sizing: border-box; /* So the input field isn't over 100% */
+}
+
+form > input[type=submit]{
+    width:100%;
+    padding:5px;
+    border: 1px solid grey;
+}
+
+.signIn{
+    background-color:orange;
+}
+
+.agreement{
+    color:rgb(115, 114, 114)
+}
+
+form > h5{
+    margin:0;
+}
+
