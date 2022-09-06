@@ -1,3 +1,6 @@
+##### firebase login
+This project only uses a basic implementation of firebase login wiht email/password. No JWT is being passed around as this is just a short demo project
+
 ##### cool setting
 Google "emmet" setup. This alllows you to type .example and have it automatically become <div classname="example></div>
 
